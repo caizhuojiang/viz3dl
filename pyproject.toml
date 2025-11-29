@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viz3dl"
+version = "0.1.0"
+description = "Lightweight 3D layout visualization."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "caizhuojiang"}]
+dependencies = [
+    "numpy<2.0",
+    "opencv-python>=4.8",
+    "Pillow>=9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/caizhuojiang/viz3dl"
+Source = "https://github.com/caizhuojiang/viz3dl"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["viz3dl"]
+exclude = ["tests", "scripts", "notebooks"]
